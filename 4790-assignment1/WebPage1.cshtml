@@ -11,6 +11,7 @@
     </ul>
 }
 
+@{ var name = Request["name"]; var gender = Request["gender"]; var age = Request["age"]; } 
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,9 +20,17 @@
     <body>
         <h2>This is WebPage1</h2>
         <table>
-            <thead> Name </thead>
-            <thead> Gender </thead>
-            <thead> Age </thead>
+            <tr>
+            <th>  Name  </th>
+            <th>  Gender  </th>
+            <th>  Age  </th>
+            </tr>
+            <tr>
+                <td>@name</td>
+                <td>@gender</td>
+                <td>@age</td>
+            </tr>
+            
         </table>
     </body>
 </html>

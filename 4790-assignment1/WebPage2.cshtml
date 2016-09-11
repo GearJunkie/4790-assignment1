@@ -18,15 +18,16 @@
     </head>
     <body>
         <h3>Form</h3>
-        <form>
+        <form method="get" action="/WebPage1.cshtml">
             <br/>
-            Name: <input id="txtName" type="text" />
+            Name: <input id="txtName" type="text" name="name"/>
             <br/><br/>
-            Gender: <input id="rdGenderM" type="radio" value="Male"/>
-                    <input id="rdGenderF" type="radio" value="Female"/>
+            Gender: <input id="rdGenderM" type="radio" value="Male" name="gender"/>Male 
+                    <input id="rdGenderF" type="radio" value="Female"name="gender"/> Female
             <br/><br/>
-            Age: <input id="txtAge" type="text"/>
+            Age: <input id="txtAge" type="text" name="age"/>
             <br/><br/>
+            <input type="submit" />
         </form>
     </body>
 </html>
