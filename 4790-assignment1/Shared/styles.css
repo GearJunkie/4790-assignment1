@@ -1,7 +1,7 @@
-﻿*{margin: 0px; padding: 0px;}
-.wrapper {margin: 0 auto 0 auto; width: 85%;}
-aside{ float: left; font-size:25px; width: 20%}
+﻿body{margin: 0px; padding: 0px; background-color:#49c8e5; }
+.wrapper {margin: 0 auto 0 auto;}
+aside{ float: left; font-size:25px; width: 20%;  }
 .content, aside{min-height: 500px;}
-footer, .nav{background-color:#b9b0b0}
-
+footer, .nav{background-color:#b9b0b0;}
+.center div{display: block; margin-left: auto; margin-right: auto;}
 

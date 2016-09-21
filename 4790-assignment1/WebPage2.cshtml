@@ -2,14 +2,14 @@
     Layout = "~/Shared/_Layout.cshtml";
 }
 @*would normally use render page for this sidebar but hw required rendersection*@
-@section sidebar{
-    <ul>
-        <li><A href="WebPage1.cshtml">Page 1</A></li>
-        <li><A href="WebPage2.cshtml">Page 2</A></li>
-        <li><A href="WebPage3.cshtml">Page 3</A></li>
-        <li><A href="WebPage4.cshtml">Page 4</A></li>
-    </ul>
-}
+
+
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="boostrap/css/bootstrap.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<script src="~/js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="~/js/script.js"></script>
 
 <!DOCTYPE html>
 <html>
@@ -18,16 +18,31 @@
     </head>
     <body>
         <h3>Form</h3>
-        <form method="get" action="/WebPage1.cshtml">
-            <br/>
-            Name: <input id="txtName" type="text" name="name"/>
-            <br/><br/>
-            Gender: <input id="rdGenderM" type="radio" value="Male" name="gender"/>Male 
-                    <input id="rdGenderF" type="radio" value="Female"name="gender"/> Female
-            <br/><br/>
-            Age: <input id="txtAge" type="text" name="age"/>
-            <br/><br/>
-            <input type="submit" />
+        <form method="get" action="/WebPage1.cshtml" >
+            <fieldset class="form-group form-inline" width="300">
+                <label for="txtName">Name: </label>
+                <input class="form-control" id="txtName" type="text" name="name"  />
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>Gender</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="Male" checked>
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="Female">
+                            Female
+                        </label>
+                    </div>                    
+                </fieldset>
+            <fieldset class="form-group">
+                <label for="txtAge">Age: </label>
+                <input id="txtAge" type="text" name="age" />
+                <input class="btn btn-primary" type="submit" />
+            </fieldset>
         </form>
     </body>
 </html>
